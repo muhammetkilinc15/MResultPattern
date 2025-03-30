@@ -1,9 +1,11 @@
 # ResultPattern for .NET
 
-![NuGet Downloads](https://img.shields.io/nuget/dt/MResultPattern.svg)
-![NuGet Version](https://img.shields.io/nuget/v/MResultPattern.svg)
-![NuGet Pre-release Version](https://img.shields.io/nuget/vpre/MResultPattern.svg)
+![NuGet Downloads](https://img.shields.io/nuget/dt/MResulPattern)
+![NuGet Version](https://img.shields.io/nuget/v/MResulPattern.svg)
+![NuGet Pre-release Version](https://img.shields.io/nuget/vpre/MResulPattern.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
+
+
 
 
 
