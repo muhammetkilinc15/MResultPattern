@@ -23,7 +23,7 @@ A robust implementation of the Result pattern for .NET applications, providing a
 ## Installation
 
 ```bash
-dotnet add package ResultPattern
+dotnet add package MResulPattern
 ```
 
 ## Usage
