@@ -4,6 +4,31 @@
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>MResulPattern</PackageId>
+    <Title>Result Pattern</Title>
+    <Version>1.0.0</Version>
+    <Company>Muhammet Kılınç</Company>
+    <Authors>Muhammet Kılınç</Authors>
+    <Description>esultPattern bir C# API yanıt modeli olup, başarılı ve başarısız durumları yönetmek için genel (generic) bir sonuç tipi sağlar. Bu yapı, HTTP durum kodları, hata mesajları ve JSON serileştirme desteğiyle temiz ve anlaşılır API yanıtları üretmeyi kolaylaştırır</Description>
+    <Copyright>Copyright 2025</Copyright>
+    <RepositoryUrl>https://github.com/muhammetkilinc15/MResultPattern.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>result-pattern</PackageTags>
+    <PackageReleaseNotes>result Nugget Package</PackageReleaseNotes>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>micon.png</PackageIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="micon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
