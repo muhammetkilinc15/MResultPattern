@@ -7,6 +7,8 @@
 
 
 
+
+
 A robust implementation of the Result pattern for .NET applications, providing a standardized way to handle operation outcomes with proper status codes and error handling.
 
 ## Key Features
