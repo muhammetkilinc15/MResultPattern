@@ -13,8 +13,8 @@ namespace MResultPattern
         [JsonPropertyName("data")]
         public T? Data { get; private set; }
 
-        [JsonPropertyName("errorMessages")]
-        public List<string>? ErrorMessages { get; private set; }
+        [JsonPropertyName("Errors")]
+        public List<string>? Errors { get; private set; }
 
         [JsonPropertyName("statusCode")]
         public int StatusCode { get; private set; }
@@ -46,7 +46,7 @@ namespace MResultPattern
             return new Result<T>
             {
                 StatusCode = statusCode,
-                ErrorMessages = errorMessages
+                Errors = errorMessages
             };
         }
 
@@ -58,7 +58,7 @@ namespace MResultPattern
             return new Result<T>
             {
                 StatusCode = statusCode,
-                ErrorMessages = new List<string> { errorMessage }
+                Errors = new List<string> { errorMessage }
             };
         }
 
@@ -88,8 +88,8 @@ namespace MResultPattern
     /// </summary>
     public class Result
     {
-        [JsonPropertyName("errorMessages")]
-        public List<string>? ErrorMessages { get; private set; }
+        [JsonPropertyName("Errors")]
+        public List<string>? Errors { get; private set; }
 
         [JsonPropertyName("statusCode")]
         public int StatusCode { get; private set; }
@@ -118,7 +118,7 @@ namespace MResultPattern
             return new Result
             {
                 StatusCode = statusCode,
-                ErrorMessages = errorMessages
+                Errors = errorMessages
             };
         }
 
@@ -130,7 +130,7 @@ namespace MResultPattern
             return new Result
             {
                 StatusCode = statusCode,
-                ErrorMessages = new List<string> { errorMessage }
+                Errors = [errorMessage]
             };
         }
 
@@ -177,9 +177,9 @@ namespace MResultPattern
         /// </summary>
         public static Result<T> OnFailure<T>(this Result<T> result, Action<List<string>> action)
         {
-            if (!result.IsSuccess && result.ErrorMessages != null)
+            if (!result.IsSuccess && result.Errors != null)
             {
-                action(result.ErrorMessages);
+                action(result.Errors);
             }
             return result;
         }
